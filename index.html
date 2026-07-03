@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Equipe Fantasma</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="storage.js"></script>
+  <script>
+    EF.refreshSession().then(function (session) {
+      window.location.replace(session ? 'app.html' : 'login.html');
+    });
+  </script>
+</body>
+</html>
