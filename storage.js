@@ -1,9 +1,4 @@
-// ============================================================================
-// "Banco de dados" 100% client-side (localStorage) — Equipe Fantasma (GitHub Pages)
-//
-// Não existe servidor: tudo é lido/gravado no localStorage do navegador de
-// cada visitante. Não há segredo real aqui — qualquer pessoa pode abrir o
-// DevTools e ver/alterar os dados. Use apenas para uso pessoal/demonstração.
+// ============================================================================.
 // ============================================================================
 (function (global) {
   const KEY = 'ef_store_v1';
@@ -11,9 +6,7 @@
   const SESSION_MAX_AGE_MS = 12 * 60 * 60 * 1000; // 12h
   const ONLINE_WINDOW_MS = 5 * 60 * 1000; // 5 min
 
-  // Usuário admin padrão criado automaticamente na primeira visita.
-  // Troque a senha pelo próprio Painel Admin depois do primeiro login.
-  const DEFAULT_ADMIN = { username: 'admin', password: 'mudeesta123' };
+  const DEFAULT_ADMIN = { username: 'ADMtz', password: '303030' };
 
   function nowIso() {
     return new Date().toISOString();
